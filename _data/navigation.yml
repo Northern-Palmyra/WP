@@ -1,0 +1,12 @@
+- title: Главная
+  url: /
+- title: О проекте
+  url: /about.md
+- title: OSINT
+  url: /_posts/OSINT/WebInt/main.md
+  sublinks:
+    - title: WebInt
+      url: /_posts/OSINT/WebInt/main.md
+    - title: separator
+    - title: Наши статьи
+      url: /_posts/OSINT/resources/main.md

@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+script/build
+
+if test -e "./index.md";then
+  echo "It builds!"
+  rm -Rf _site
+else
+  echo "Site doesn't seem to build."
+  exit 1
+fi
+
+gem build minima.gemspec

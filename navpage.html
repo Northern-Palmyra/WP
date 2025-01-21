@@ -1,0 +1,57 @@
+---
+layout: page
+title: Навигация по сайту
+permalink: navpage
+---
+    <div class="dropdown">
+        <h4>WebInt</h4>
+        <div class="dropdown-content" id="dropdownContent">
+            {%- for post in site.posts -%}
+                {%- if post.url contains '/_posts/OSINT/WebInt' -%}
+                    <li>
+                      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+    </div>
+<br>
+    <div class="dropdown">
+        <h4>HumInt</h4>
+        <div class="dropdown-content" id="dropdownContent">
+            {%- for post in site.posts -%}
+                {%- if post.url contains '/_posts/OSINT/resources' -%}
+                    <li>
+                      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+    </div>
+<br>
+    <div class="dropdown">
+        <h4>OSINT</h4>
+        <div class="dropdown-content" id="dropdownContent">
+            {%- for post in site.posts -%}
+                {%- if post.url contains '/_posts/OSINT/' -%}
+                    <li>
+                      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+    </div>
+<br>
+    <div class="dropdown">
+        <h4>Разное</h4>
+        <div class="dropdown-content" id="dropdownContent">
+            {%- for post in site.posts -%}
+                {%- if post.url contains '/_posts/Other/' -%}
+                    <li>
+                      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+    </div>
+<br>
